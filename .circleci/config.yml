@@ -17,6 +17,15 @@ jobs:
       - run:
           name: "Say hello"
           command: "echo Hello, World!"
+      - run:
+          name: "curl"
+          command: "curl https://www.baidu.com"
+      - run:
+          name: "curl"
+          command: "curl https://www.google.com"
+      - run:
+          name: "curl"
+          command: "curl https://www.github.com"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
